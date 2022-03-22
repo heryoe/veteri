@@ -1,0 +1,213 @@
+                   /*--------*/
+                     /* Cuerpo */
+                     /*--------*/
+                       body{
+                 background: url(mar2.jpg);
+            background-size: 200%;
+                           }  
+                     /*--------*/
+                     /* Titulo */
+                     /*--------*/
+                         h1{text-align: center;}
+    
+                     .titu1{
+                 margin-top: -10px;
+                      color: white;
+                  font-size: 20px;
+           background-color: blue;
+                           }
+
+                     .titu2{
+                     border: 3px solid lightblue;    
+              border-radius: 50px;
+                      width: 100px;
+                 margin-top: -10px;
+                           }
+
+                   /*------------*/
+                   /* Marquesina */
+                   /*------------*/
+                    .marque{
+                 margin-top: -19px;
+              border-radius: 40px;
+                           }
+
+                   .marque1{
+                      width: 10px;
+                     height: 10px;
+           background-color: red;
+              border-radius: 40px;
+        animation-direction: alternate; 
+             animation-name: caminar;
+         animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+                           }
+
+         @keyframes caminar{
+                       100%{margin-left: 100%;}
+                           }
+
+
+                   /*-----------*/
+                   /* Conócenos */
+                   /*-----------*/
+                     .conte{
+                    display: grid;
+      grid-template-columns: repeat(25, 250px);
+            grid-column-gap: 25px;
+                     height: 300px;
+                      width: 85%;
+                 margin-top: 7px;
+                     border: 5px solid blue;
+                   overflow: auto;
+              border-radius: 50px;
+                           }
+
+  /*.conte::-webkit-scrollbar{height: 25px;}*/
+             
+                     .fondo{
+                     border: 3px solid lightblue;
+                      width: 250px;
+                     height: 250px;
+                     margin: 20px;
+              border-radius: 50px;
+                           }
+    
+
+                     /*---------*/
+                     /* Enlaces */
+                     /*---------*/
+                 footer img{width: 30px;}
+                    
+                        .fb{ 
+                margin-left: 10px;
+                 margin-top: 20px;
+                           }
+
+                      .mail{
+                margin-left: 35px;
+                 margin-top: 18px;
+                           }
+
+                        .ws{
+                margin-left: 35px;
+                 margin-top: 20px;
+                           }
+
+                    
+                    /*----------*/
+                    /* Opciones */
+                    /*----------*/
+                        .qs{
+                      color: black; 
+                 background: white;
+                 margin-top: 15px;
+              border-radius: 30px;
+                           }
+
+                        .ns{
+                      color: black; 
+                 background: white;
+                 margin-top: 15px;
+              border-radius: 30px;
+                           } 
+
+                        .de{
+                      color: black; 
+                 background: white;
+                 margin-top: 15px;
+              border-radius: 30px;
+                           }
+
+                        .co{
+                      color: black; 
+                 background: white;
+                 margin-top: 15px;
+              border-radius: 30px;
+                           }
+
+                     .fecha{color: black;}
+
+              /*-----------------------*/
+              /* Ajuste a Dispositivos */
+              /*-----------------------*/
+         @media screen and (min-width: 710px) /*Celular Acostado*/ 
+                           {                                         
+                     .titu1{font-size:30px;}
+                     .titu2{width: 130px;}
+                   .marque1{animation-duration: 3s;}
+                     .conte{height: 290px;}
+                        .qs{margin-left: 5%;}
+                        .ns{margin-left: 5%;}
+                        .de{margin-left: 5%;}
+                        .co{margin-left: 5%;}
+                           }
+
+
+         @media screen and (min-width: 720px) /*Tableta Parada*/
+                           {                                         
+                       body{
+                 background: url(mar1.jpg);
+            background-size: 130%;
+                           } 
+
+                     .titu1{font-size:40px;}
+                     .titu2{width: 160px;height: 100px;}
+                   .marque1{animation-duration: 3s;}
+                     .conte{height: 500px;grid-template-columns: repeat(25, 430px);}
+                     .fondo{width: 430px;height: 430px;margin: 35px;}
+                        .qs{font-size: 18px; margin-left: 5%;}
+                        .ns{font-size: 18px;margin-left: 5%;}
+                        .de{font-size: 18px;margin-left: 5%;}
+                        .co{font-size: 18px;margin-left: 5%;}
+                           }
+
+
+        /* @media screen and (min-width: 1000px)*/ /*Tableta Acostada*/
+                          /* {                                         
+                     .titu1{font-size:40px;}
+                     .titu2{width: 160px;height: 100px;}
+                   .marque1{animation-duration: 3s;}
+                     .conte{height: 500px;grid-template-columns: repeat(25, 430px);}
+                     .fondo{width: 430px;height: 430px;}
+                           }*/
+
+
+         @media screen and (min-width: 1100px) /*Lap y Escritorio*/
+                           {
+                       body{
+                 background: url(trailer.jpg);
+            background-size: 100%;
+                           } 
+
+                     .titu2{width: 180px;height: 100px;}
+                   .marque1{animation-duration: 5s;background-color: darkred;}
+                     .conte{width: 800px;height: 300px;border-radius: 0;
+                            grid-template-columns: repeat(25, 255px);
+                            border-top-left-radius: 50px;border-top-right-radius: 50px;}
+                     .fondo{width: 255px;height: 255px;margin: 20px;}
+                     .fecha{color: black;}
+                        .qs{color: white;background: red;font-size: 15px;}
+                        .ns{color: white;background: red;font-size: 15px;}
+                        .de{color: white;background: red;font-size: 15px;}
+                        .co{color: white;background: red;font-size: 15px;}
+                           }
+
+
+         @media screen and (min-width: 1700px) /*Pantalla*/
+                           {
+                     .titu2{width: 200px;height: 120px;}
+                   .marque1{animation-duration: 5s;background-color: darkred;}
+                     .conte{width: 1300px;height: 420px;border-radius: 0;
+                            grid-template-columns: repeat(25, 350px);
+                            border-top-left-radius: 50px;border-top-right-radius: 50px;}
+                     .fondo{width: 350px;height: 350px;margin: 20px;}
+                     .fecha{color: black;}
+                        .qs{color: white;background: red;font-size: 15px;}
+                        .ns{color: white;background: red;font-size: 15px;}
+                        .de{color: white;background: red;font-size: 15px;}
+                        .co{color: white;background: red;font-size: 15px;}
+                           }    
+
+  
